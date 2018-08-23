@@ -106,8 +106,8 @@ export const MESSAGE_POST_COMMENT_FAILED = 'Post comment failed.';
 //  ROUTER
 //---------------------------------------------------------
 
-export const ROUTE_ARTICLE_VIEW = API_BASE_URL + '/article-view/';
+export const ROUTE_ARTICLE_VIEW = '/article-view/';
 
-export const ROUTE_ARTICLE_EDITOR = API_BASE_URL + '/article/editor/';
+export const ROUTE_ARTICLE_EDITOR = '/article/editor/';
 
-export const ROUTE_CATEGORIES = API_BASE_URL + '/categories/';
+export const ROUTE_CATEGORIES = '/categories/';

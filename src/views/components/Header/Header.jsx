@@ -20,6 +20,7 @@ import { GoogleLogout } from 'react-google-login';
 
 import MainMenu from '../../components/MainMenu';
 import SignIn from '../../components/SignIn';
+import { GoogleLogin, FacebookLogin } from '../../components/Social';
 
 class Header extends React.Component {
 
@@ -92,6 +93,8 @@ class Header extends React.Component {
                     </div>
                     <div className="header-account">
                         <div className="sign-in-button">
+                        <GoogleLogin />
+                        <FacebookLogin />
                         {
                             !this.props.authUser.isAuth ? '' : 
                             <div className="group-user">

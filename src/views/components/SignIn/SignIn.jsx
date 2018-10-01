@@ -30,6 +30,8 @@ import GoogleLogin from 'react-google-login';
 
 import FacebookProvider, { Login } from 'react-facebook';
 
+import FacebookLogin from 'react-facebook-login';
+
 class SignIn extends React.Component {
 
     constructor(props) {
@@ -196,8 +198,8 @@ class SignIn extends React.Component {
 
     handleResponse(response) {
         console.log('handleResponse', response);
-        const { signInWithFacebook } = this.props;
-        signInWithFacebook(response);
+        // const { signInWithFacebook } = this.props;
+        // signInWithFacebook(response);
     };
 
     handleError() {
@@ -318,6 +320,12 @@ class SignIn extends React.Component {
                             </button>
                             </Login>
                         </FacebookProvider>
+                        <FacebookLogin
+                            appId={FACEBOOK_APP_ID}
+                            autoLoad={true}
+                            fields="name,email,picture"
+                            //onClick={componentClicked}
+                            callback={this.handleResponse} />
                     </Grid>
                 </Grid>
                 

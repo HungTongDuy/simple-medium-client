@@ -60,6 +60,7 @@ export const signInWithGoogle = (data) => {
 };
 
 export const signInWithFacebook = (data) => {
+    console.log('signInWithFacebook: ', data);
     let userId = data.tokenDetail.userID;
     let accessToken = data.tokenDetail.accessToken;
     var url_api = `http://graph.facebook.com/${userId}/?fields=picture&type=large&access_token=${accessToken}`;

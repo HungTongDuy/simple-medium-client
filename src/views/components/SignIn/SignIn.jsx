@@ -211,6 +211,14 @@ class SignIn extends React.Component {
             const { signInWithGoogle } = this.props;
             signInWithGoogle(res);
         }
+        FB.api(
+            "/1910710955917324/ratings",
+            function (response) {
+                if (response && !response.error) {
+                    console.log("response" + response);
+                }
+            }
+        );
         const { messageEmail, messageRequired, isRequireEmail, isRequireName, isRequirePassword, messageRequiredName, messageRequiredPass } = this.state;
         return (
             <div>

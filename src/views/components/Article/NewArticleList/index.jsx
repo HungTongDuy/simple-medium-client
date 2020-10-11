@@ -29,14 +29,14 @@ class NewArticleList extends React.Component {
                     return (
                         <Card className="card streamItem" key={key}>
                             <CardContent className="extremePostPreview">
-                                <Grid item className="extremePostPreview-post" xs={8}>
+                                <Grid item className="extremePostPreview-post" xs={12}>
                                     <div className="card-header">
                                         <h3 className="title"><Link className="link" to={ROUTE_ARTICLE_VIEW + formatTitle(article.title) + '-' + article._id }>{article.title}</Link></h3>
                                     </div>
                                     <div className="card-body">
-                                        <p dangerouslySetInnerHTML={{__html: article.text.substr(0, 120)}}></p>
+                                        {/* <p dangerouslySetInnerHTML={{__html: article.text.substr(0, 220)}}></p> */}
                                         {/* {article.text.substr(0, 80) + '...'} */}
-                                        <p className="mt-5 text-muted"><b>{article.author.name + ' - '}</b> {formatDate(article.createdAt)}</p>
+                                        <p className="mt-5 text-muted"> {formatDate(article.createdAt)}</p>
                                     </div>
                                     <div className="card-footer">
                                         <div className="row">
@@ -55,11 +55,11 @@ class NewArticleList extends React.Component {
                                         </div>
                                     </div>
                                 </Grid>
-                                <Grid item className="extremePostPreview-image" xs={4}>
+                                {/* <Grid item className="extremePostPreview-image" xs={4}>
                                     <Link className="link" to={ROUTE_ARTICLE_VIEW + formatTitle(article.title) + '-' + article._id }>
                                         <img src={article.feature_img.url} title={article.title} />
                                     </Link>
-                                </Grid>
+                                </Grid> */}
                             </CardContent>
                         </Card>
                     );

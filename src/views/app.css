@@ -11,10 +11,20 @@ body {
     background-color: #ffffff;
     margin: 0!important;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: space mono,monospace;
+}
+.footer {
+    background-color: #2d3339;
+    padding-left: 16px;
+}
+
+.footer ul li {
+    margin: 7px 0;
+}
 .card {
     margin: 0 auto;
     width: 100%;
-    margin-bottom: 20px;
     display: block;
     float: left;
 }
@@ -22,7 +32,7 @@ body {
     text-align: center;
 }
 .header {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px;
     display: flex;
 
     position: -webkit-sticky;
@@ -32,7 +42,16 @@ body {
     z-index: 1030;
     background-color: #fff;
     box-shadow: 0 4px 4px 0 rgba(0,0,0,.1);
-    height: 60px;
+    height: 60px; */
+    background-color: #2d3339;
+    height: 100%;
+    left: 0;
+    overflow-x: hidden;
+    padding: 1%;
+    position: fixed;
+    top: 0;
+    width: 300px;
+    z-index: 1;
 }
 .extremePostPreview-image {
     float: right;
@@ -129,6 +148,14 @@ body {
 .homeCenterStream {
     margin-top: 30px;
 }
+.homeCenterStream .streamItem {
+    box-shadow: none!important;
+    border-radius: 0;
+}
+
+.homeCenterStream .streamItem:nth-child(n+2) {    
+    border-top: solid 1px #ddd;
+}
 .extremeHero-postContent {
     display: block;
     float: left;
@@ -149,8 +176,17 @@ body {
     float: right;
 }
 .header-logo {
-    width: 20%;
-    display: inline-block;
+    margin-bottom: 15%;
+}
+.site-title {
+    font-size: 27px;
+    font-weight: 1000;
+    /* font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; */
+    font-family: space mono,monospace;
+    color: #fdfdfd;
+    line-height: 53.55px;
+    text-transform: uppercase;
+    padding-left: 16px;
 }
 .header-account {
     width: 20%;
@@ -158,18 +194,21 @@ body {
     margin-top: 5px;
 }
 .js-metabarLogoCentered {
-    width: 100%;
-    float: left;
-    display: flex;
+    width: 80%;
     margin-top: 10px;
 }
 .menu.header-menu {
     width: 60%;
     display: inline-block;
-    margin-top: 5px;
+    margin-top: 10%;
 }
 
-
+.header-menu span a, 
+.header-menu span{
+    color: #e8e8e8;
+    font-size: 22px;
+    text-transform: capitalize;
+}
 
 svg.svgIcon-use {
     margin-top: 5px;
@@ -298,6 +337,7 @@ p.mt-5.text-muted {
 .homeContainer {
     margin: 0 auto;
     display: block;
+    margin-left: 300px;
 }
 .app {
     min-height: 100vh;

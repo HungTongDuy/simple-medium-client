@@ -99,7 +99,7 @@ class ArticleDetail extends React.Component {
         return (
             <article className=" u-minHeight100vhOffset65 u-overflowHidden postArticle postArticle--full is-withAccentColors u-marginBottom40" lang="en">
                 {/*-----------start header page ariticle view----------*/}
-                <header className="u-maxWidth740 postMetaHeader">
+                {/* <header className="u-maxWidth740 postMetaHeader">
                     <div className="uiScale uiScale-ui--regular uiScale-caption--regular u-paddingBottom10 row">
                         <div className="col u-size12of12 js-postMetaLockup">
                             <div className="uiScale uiScale-ui--regular uiScale-caption--regular postMetaLockup postMetaLockup--authorWithBio u-flexCenter js-postMetaLockup">
@@ -124,17 +124,16 @@ class ArticleDetail extends React.Component {
                                             </button>
                                         </span>
                                     </div>
-                                    {/* <div className="ui-caption ui-xs-clamp2 postMetaInline">🤓 Nerd coach 🚗 Built Zipcar's technology ♻️ Yerdle co-founder. San Francisco</div> */}
                                     <div className="ui-caption postMetaInline js-testPostMetaInlineSupplemental">
                                         <time dateTime={articleDetail.createdAt}>{formatDate(articleDetail.createdAt)}</time>
                                         <span className="middotDivider u-fontSize12"></span>
-                                        {/* <span className="readingTime" title="5 min read"></span> */}
+                                        <span className="readingTime" title="5 min read"></span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </header>
+                </header> */}
                 {/*-----------end header page ariticle view----------*/}
                 {/*-----------start content ariticle view----------*/}
                 <div className="postArticle-content js-postField js-notesSource js-trackedPost" data-post-id="82e275c8764f" data-source="post_page" data-collection-id="336d898217ee" data-tracking-context="postPage" data-scroll="native">

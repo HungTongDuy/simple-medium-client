@@ -17,8 +17,8 @@ class Footer extends React.Component {
 
     render() {
         return (
-            <footer className="footer bg-dark">
-                <div className="container pt-2">
+            <footer className="footer">
+                <div className="pt-2">
                     {/* <div className="row">
                         <div className="mb-1 mb-md-0 col-md-4">
                             <h4 className="footer__header">Resources</h4>
@@ -62,18 +62,18 @@ class Footer extends React.Component {
                     </div> */}
                     <hr className="footer__divider"/>
                     <div className="row py-1">
-                        <Grid item xs={9} sm={9}>
+                        {/* <Grid item xs={9} sm={9}>
                             <p className="copyright">
-                            © 2018 <b>HungTong</b>. All rights reserved.
+                            © 2018 <b>Code</b>. All rights reserved.
                             </p>
-                        </Grid>
+                        </Grid> */}
                     
-                        <Grid item xs={3} sm={3}>
-                            <ul className="list-unstyled d-md-flex justify-content-md-between">
-                            <li className="mb-05"><a href="/feedback" className="link">Feedback</a></li>
-                            <li className="mb-05"><a href="/helps" className="link">Help</a></li>
-                            <li className="mb-05"><a href="/faq" className="link">FAQs</a></li>
-                            <li className="mb-05"><a href="/terms" className="link">Terms</a></li>
+                        <Grid item xs={12} sm={12}>
+                            <ul className="list-unstyled justify-content-md-between">
+                            <li className="mb-05"><a href="/" className="link">Facebook</a></li>
+                            <li className="mb-05"><a href="/" className="link">Github</a></li>
+                            <li className="mb-05"><a href="/" className="link">Twitter</a></li>
+                            <li className="mb-05"><a href="/" className="link">Sách mình đang đọc</a></li>
                             </ul>
                         </Grid>
                     </div>

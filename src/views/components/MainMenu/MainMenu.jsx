@@ -75,7 +75,7 @@ class MainMenu extends React.Component{
                     aria-owns={open ? 'menu-list-grow' : null}
                     aria-haspopup="true"
                 >
-                    Tech
+                    <Link className="link" to="/">Tech</Link>
                 </Button>
                 <Button
                     buttonRef={node => {
@@ -84,9 +84,9 @@ class MainMenu extends React.Component{
                     aria-owns={open ? 'menu-list-grow' : null}
                     aria-haspopup="true"
                 >
-                    Design
+                    <Link className="link" to="/">Design</Link>
                 </Button>
-                <Button
+                {/* <Button
                     buttonRef={node => {
                     this.anchorEl = node;
                     }}
@@ -94,7 +94,7 @@ class MainMenu extends React.Component{
                     aria-haspopup="true"
                 >
                     Science
-                </Button>
+                </Button> */}
                 <Button
                     buttonRef={node => {
                     this.anchorEl = node;
@@ -102,7 +102,7 @@ class MainMenu extends React.Component{
                     aria-owns={open ? 'menu-list-grow' : null}
                     aria-haspopup="true"
                 >
-                    Contact
+                    <Link className="link" to="/">Contact</Link>
                 </Button>
                 {/* <Button
                     buttonRef={node => {

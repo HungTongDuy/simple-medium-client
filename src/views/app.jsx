@@ -5,7 +5,7 @@ import ArticleDetail from './components/ArticleDetail';
 import Header from './components/Header';
 import Home from './screens/Home';
 import AddArticle from './screens/Article/AddArticle';
-import Footer from './components/Footer';
+
 import Profile from './components/Profile';
 
 import './app.css';
@@ -24,7 +24,6 @@ const App = () => {
                     <Route exact path="/article/editor/:id/edit" component={AddArticle} />
                 </Switch>
             </div>
-            <Footer />
         </div>
     )
 }

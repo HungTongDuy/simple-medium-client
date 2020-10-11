@@ -40,9 +40,9 @@ class Home extends React.Component {
         let { articles } = this.props;
         return (
             <div>
-                <div className="homeTopStream">
+                {/* <div className="homeTopStream">
                     <FeaturedArticleList articles={articles} />
-                </div>
+                </div> */}
                 <div className="homeCenterStream">
                     <Grid item xs={12} sm={12}>
                         <NewArticleList articles={articles} />

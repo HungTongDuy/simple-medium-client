@@ -113,17 +113,17 @@ class Form extends React.Component {
 
     componentWillMount() {
         var pathname = this.props.location.pathname;
-        console.log(pathname);
+        // console.log(pathname);
         var start = pathname.lastIndexOf('editor/');
-        console.log('start', start);
+        // console.log('start', start);
         var end = pathname.lastIndexOf('/edit');
-        console.log('end', end);
+        // console.log('end', end);
         var id = pathname.slice(start, end);
-        console.log('id: ', id);
+        // console.log('id: ', id);
     }
 
     handleModelChange(model) {
-        console.log('handleModelChange', model);
+        // console.log('handleModelChange', model);
         this.setState({
             text: model,
             description: `${model.substring(0,30).toString()}...`
@@ -131,7 +131,7 @@ class Form extends React.Component {
     }
 
     onEditorStateChange(text) {
-        console.log('onEditorStateChange', text);
+        // console.log('onEditorStateChange', text);
         this.setState({
             editorState : text
         })
